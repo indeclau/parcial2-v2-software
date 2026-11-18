@@ -15,6 +15,7 @@ Parcial 2 de Ingeniería de Software (ISTEA, 2C-2026). Es un gestor de tareas we
 | `index.html` | Página con la sección de bienvenida y el listado de tareas |
 | `styles.css` | Estilos de la aplicación |
 | `app.js` | Lógica del listado: agregar, completar y borrar tareas, guardadas en `localStorage` |
+| `resumen.js` | Sección agregada en `feature-nueva-seccion`: contadores, barra de progreso y filtros por estado |
 | `Dockerfile` | Imagen basada en `nginx:alpine` que sirve los archivos estáticos |
 | `.dockerignore` | Excluye del contexto de build lo que no va en la imagen |
 | `.gitignore` | Archivos que Git no versiona |

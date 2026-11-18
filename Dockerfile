@@ -5,7 +5,7 @@ LABEL maintainer="David Bernabé Wuscovi" \
       description="Parcial 2 - Ingeniería de Software (ISTEA): gestor de tareas estático"
 
 # Copia los archivos estáticos al directorio que sirve nginx
-COPY index.html styles.css app.js /usr/share/nginx/html/
+COPY index.html styles.css app.js resumen.js /usr/share/nginx/html/
 
 EXPOSE 80
 

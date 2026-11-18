@@ -22,8 +22,26 @@
       </p>
     </section>
 
+    <section id="resumen" class="tarjeta">
+      <h2>Resumen</h2>
+      <div class="contadores">
+        <div class="contador"><span id="cont-total">0</span><small>Total</small></div>
+        <div class="contador"><span id="cont-pendientes">0</span><small>Pendientes</small></div>
+        <div class="contador"><span id="cont-hechas">0</span><small>Hechas</small></div>
+      </div>
+      <div class="progreso" role="progressbar" aria-label="Avance" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="barra-progreso" class="barra"></div>
+      </div>
+      <p id="texto-progreso" class="texto-progreso">0% completado</p>
+    </section>
+
     <section id="tareas" class="tarjeta">
       <h2>Mis tareas</h2>
+      <div class="filtros" role="group" aria-label="Filtrar tareas">
+        <button type="button" class="filtro activo" data-filtro="todas">Todas</button>
+        <button type="button" class="filtro" data-filtro="pendientes">Pendientes</button>
+        <button type="button" class="filtro" data-filtro="hechas">Hechas</button>
+      </div>
       <form id="form-tarea" class="form-tarea" autocomplete="off">
         <label for="input-tarea" class="oculto">Nueva tarea</label>
         <input id="input-tarea" type="text" maxlength="120" placeholder="Ej.: Preparar el informe del parcial" required>
@@ -43,6 +61,7 @@
     <p>David Bernabé Wuscovi · 2C-2026 · Servido con nginx:alpine en Docker</p>
   </footer>
 
+  <script src="resumen.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
