@@ -48,7 +48,7 @@ Parcial 2 de Ingeniería de Software (ISTEA, 2C-2026). Es un gestor de tareas we
 
 4. Abrir <http://localhost:8080> en el navegador.
 
-   > Si el puerto 8080 del equipo ya está en uso, el contenedor arranca pero no queda publicado. En ese caso se usa otro puerto, por ejemplo `-p 8081:80` y <http://localhost:8081>. Las capturas del informe se tomaron con el 8081.
+   > Si el puerto 8080 del equipo ya está en uso, lo habitual es que `docker run` falle con un error de puerto ocupado. En algunos entornos, como pasó en este equipo con Docker Desktop, el contenedor arranca igual pero sin el puerto publicado (`docker ps` muestra solo `80/tcp`). En cualquiera de los dos casos hay que borrar el contenedor (`docker rm -f parcial2-app`) y repetir con otro puerto, por ejemplo `-p 8081:80`, y abrir <http://localhost:8081>. Las capturas del informe se tomaron con el 8081.
 
 5. Comprobar el estado y detener el contenedor:
 
