@@ -116,6 +116,46 @@ button:hover { background: var(--primario-oscuro); }
 
 .lista-vacia { color: var(--suave); font-style: italic; }
 
+/* Nueva sección: resumen y filtros */
+.contadores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+.contador {
+  background: var(--fondo);
+  border-radius: 10px;
+  padding: .75rem;
+  text-align: center;
+}
+.contador span { display: block; font-size: 1.75rem; font-weight: 700; color: var(--primario); }
+.contador small { color: var(--suave); }
+
+.progreso {
+  height: 12px;
+  background: var(--borde);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.barra {
+  height: 100%;
+  width: 0;
+  background: var(--baja);
+  transition: width .3s ease;
+}
+.texto-progreso { margin: .5rem 0 0; color: var(--suave); font-size: .9rem; }
+
+.filtros { display: flex; gap: .5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.filtro {
+  background: var(--fondo);
+  color: var(--texto);
+  border: 1px solid var(--borde);
+  padding: .4rem .9rem;
+}
+.filtro:hover { background: var(--borde); }
+.filtro.activo { background: var(--primario); color: #fff; border-color: var(--primario); }
+
 .oculto {
   position: absolute;
   width: 1px;
