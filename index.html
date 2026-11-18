@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestor de Tareas | Parcial 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Gestor de Tareas</h1>
+    <p class="subtitulo">Parcial 2 · Ingeniería de Software · ISTEA</p>
+  </header>
+
+  <main class="contenedor">
+    <section id="bienvenida" class="tarjeta">
+      <h2>Bienvenido</h2>
+      <p>
+        Esta aplicación permite organizar las tareas del día. Podés agregar una tarea,
+        marcarla como hecha o eliminarla. La lista se guarda en el navegador, así que
+        se conserva al recargar la página.
+      </p>
+    </section>
+
+    <section id="tareas" class="tarjeta">
+      <h2>Mis tareas</h2>
+      <form id="form-tarea" class="form-tarea" autocomplete="off">
+        <label for="input-tarea" class="oculto">Nueva tarea</label>
+        <input id="input-tarea" type="text" maxlength="120" placeholder="Ej.: Preparar el informe del parcial" required>
+        <select id="select-prioridad" aria-label="Prioridad">
+          <option value="alta">Alta</option>
+          <option value="media" selected>Media</option>
+          <option value="baja">Baja</option>
+        </select>
+        <button type="submit">Agregar</button>
+      </form>
+      <ul id="lista-tareas" class="lista-tareas"></ul>
+      <p id="lista-vacia" class="lista-vacia" hidden>No hay tareas cargadas.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>David Bernabé Wuscovi · 2C-2026 · Servido con nginx:alpine en Docker</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
