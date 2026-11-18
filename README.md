@@ -30,7 +30,7 @@ Parcial 2 de Ingeniería de Software (ISTEA, 2C-2026). Es un gestor de tareas we
 1. Clonar el repositorio y entrar a la carpeta:
 
    ```bash
-   git clone https://github.com/<usuario>/parcial2-v2-software.git
+   git clone https://github.com/indeclau/parcial2-v2-software.git
    cd parcial2-v2-software
    ```
 
